@@ -1,0 +1,12 @@
+
+
+.App {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  background-color: rgb(250,250,250);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
