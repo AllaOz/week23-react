@@ -32,7 +32,7 @@
   height: 5vw;
   margin: 1px;
 }
-.tariff-card .tariffsname .h2 {
+.tariff-card .tariffsname h2 {
   font-size: 24px;
 }
 .tariff-card .price {
@@ -107,6 +107,7 @@
     font-size: 28px;
   }
   .tariff-card .sub, .tariff-card .sub1 {
+    font-family: "Roboto", sans-serif;
     font-size: 10px;
   }
   .tariff-card .speed {
@@ -126,9 +127,10 @@
   }
   .tariff-card {
     width: 80%;
+    height: auto;
   }
   .tariff-card .tariffsname h2 {
-    font-size: 12px;
+    font-size: 10px;
   }
   .tariff-card .traffic {
     height: auto;
@@ -138,6 +140,7 @@
     font-size: 28px;
   }
   .tariff-card .sub, .tariff-card .sub1 {
+    font-family: "Roboto", sans-serif;
     font-size: 10px;
   }
   .tariff-card .speed {
