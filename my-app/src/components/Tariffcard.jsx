@@ -1,10 +1,15 @@
+import React from "react";
+import "./Tariffcard.scss";
 
-import './Tariffcard.scss';
+function Tariffcard(props) {
+  const { tariffsname, price, speed, traffic, isSelected, onSelectTariff } = props;
 
-function Tariffs(props) {
-const { tariffsname, price, speed, traffic } = props;
-const formatPrice = (price) => {
-const [rub, amount, month] = price.split(' ');
+  const handleTariffSelect = () => {
+    onSelectTariff(tariffsname);
+  };
+
+  const formatPrice = (price) => {
+    const [rub, amount, month] = price.split(" ");
 
     return (
       <>
@@ -15,7 +20,10 @@ const [rub, amount, month] = price.split(' ');
   };
 
   return (
-    <div className="tariff-card">
+    <div
+      className={`tariff-card ${isSelected ? "selected" : ""}`}
+      onClick={handleTariffSelect}>
+
       <div className="tariffsname">
         <h2>{tariffsname}</h2>
       </div>
@@ -26,4 +34,4 @@ const [rub, amount, month] = price.split(' ');
   );
 }
 
-export default Tariffs;
+export default Tariffcard;
