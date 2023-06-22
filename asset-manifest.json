@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/week23-react/static/css/main.08e0271e.css",
-    "main.js": "/week23-react/static/js/main.807c59a6.js",
-    "static/js/787.28cb0dcd.chunk.js": "/week23-react/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/week23-react/index.html",
-    "main.08e0271e.css.map": "/week23-react/static/css/main.08e0271e.css.map",
-    "main.807c59a6.js.map": "/week23-react/static/js/main.807c59a6.js.map",
-    "787.28cb0dcd.chunk.js.map": "/week23-react/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/week24-react/static/css/main.08e0271e.css",
+    "main.js": "/week24-react/static/js/main.433588f8.js",
+    "static/js/787.28cb0dcd.chunk.js": "/week24-react/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/week24-react/index.html",
+    "main.08e0271e.css.map": "/week24-react/static/css/main.08e0271e.css.map",
+    "main.433588f8.js.map": "/week24-react/static/js/main.433588f8.js.map",
+    "787.28cb0dcd.chunk.js.map": "/week24-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08e0271e.css",
-    "static/js/main.807c59a6.js"
+    "static/js/main.433588f8.js"
   ]
 }
