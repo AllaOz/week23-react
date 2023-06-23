@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/week24-react/static/css/main.08e0271e.css",
-    "main.js": "/week24-react/static/js/main.433588f8.js",
+    "main.css": "/week24-react/static/css/main.44487c35.css",
+    "main.js": "/week24-react/static/js/main.043e1fb3.js",
     "static/js/787.28cb0dcd.chunk.js": "/week24-react/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/week24-react/index.html",
-    "main.08e0271e.css.map": "/week24-react/static/css/main.08e0271e.css.map",
-    "main.433588f8.js.map": "/week24-react/static/js/main.433588f8.js.map",
+    "main.44487c35.css.map": "/week24-react/static/css/main.44487c35.css.map",
+    "main.043e1fb3.js.map": "/week24-react/static/js/main.043e1fb3.js.map",
     "787.28cb0dcd.chunk.js.map": "/week24-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08e0271e.css",
-    "static/js/main.433588f8.js"
+    "static/css/main.44487c35.css",
+    "static/js/main.043e1fb3.js"
   ]
 }
