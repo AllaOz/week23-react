@@ -23,12 +23,13 @@
   margin-right: 5px;
   text-align: center;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .tariff-card.selected {
-  border: rgb(12, 172, 97) solid 2px;
-  box-shadow: -10px 9px 12px -5px rgba(0, 0, 0, 0.41);
-  -webkit-box-shadow: -10px 9px 12px -5px rgba(0, 0, 0, 0.41);
-  -moz-box-shadow: -10px 9px 12px -5px rgba(0, 0, 0, 0.41);
+  border: rgb(52, 100, 78) solid 1px;
+  box-shadow: -9px 10px 20px -3px rgba(107, 115, 46, 0.63);
+  -webkit-box-shadow: -9px 10px 20px -3px rgba(107, 115, 46, 0.63);
+  -moz-box-shadow: -9px 10px 20px -3px rgba(107, 115, 46, 0.63);
 }
 .tariff-card .sub, .tariff-card .sub1 {
   font-size: 16px;

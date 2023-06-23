@@ -13,8 +13,8 @@ function Tariffcard(props) {
 
     return (
       <>
-        <span className="sub">{rub}</span> <sub>{amount}</sub>
-        <span className="sub1">{month}</span>
+        <sup><span className="sub">{rub}</span></sup> <sub>{amount}</sub>
+        <sub><span className="sub1">{month}</span></sub>
       </>
     );
   };
