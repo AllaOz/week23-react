@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+Week24
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Кратко опишите основные отличия state от props. props передаётся в компонент (служат как параметры функции), в то время как state находится внутри компонента (по аналогии с переменными, которые объявлены внутри функции). Props нельзя изменять, а state возможно
+2. Какую ошибку я допустила в следующем коде и как её исправить:
+   handleChange = () => {
+   const chechedArr = this.state.arr; // [1,2,3]
+   chechedArr.push(5); // [1,2,3,5]
+   this.setState({
+   arr: chechedArr,
+   });
+   };
+   Добавить spread syntax и создать новый массив
 
-## Available Scripts
+handleChange = () => {
+const chechedArr = […this.state.arr}; // [1,2,3]
+chechedArr.push(5); // [1,2,3,5]
+this.setState({
+arr: chechedArr,
+});
+};
 
-In the project directory, you can run:
+3. Можно ли повесить на один элемент несколько обработчиков событий?
+   Да
+4. Каким образом можно изменить state?C помощью функции setState()
+5. Попробуйте предсказать, какие сообщения будут в консоли, и объяснить результат:
+   handleChange = () => {
+   console.log(this.state.checked) //#1 false
+   this.setState({
+   checked: !this.state.checked, //true
+   });
+   console.log(this.state.checked) //#2 ?
+   };  
+   False, т.к setState работает асинхронно
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6. Какими способами можно задать функцию handleChange и какой из них является самым правильным? Внутри классового компонента, с помощью хука useState
+7. Чем отличаются классовые и функциональные компоненты? Какие из них предпочтительнее в 2021 году? Главное отличие классового компонента от функционального это возможность хранить внутреннее состояния. Классовый компонент должен содержать метод render(), который возвращает React-элемент. Доступ к props осуществляется через this
+8. Есть ли this в функциональных компонентах? Как можно получить доступ к нему? Вместо this в функциональных компонентах использются hooks ex useState
+9. Можно ли использовать props и state одновременно? Да, через props можно получать данные из внешнего источника, а states управляет внутренним состоянием компонента
+10. Где можно задать state без использования команды this.setState? Через функциональный компонент использую useState
+11. Может ли состояние классового компонента не быть объектом? А функционального? Классовый компонент всегда объект, функциональный может быть объект, примитив (строка, цифра, булеан)
+12. Способны ли функциональные компоненты самостоятельно хранить состояние? Да, с помощью useState
+13. Как использовать хуки в классовых компонентах? Хуки не могут быть использованы внутри классовых компонентов
+14. А как задать начальное состояние props, если они ещё не были переданы?
+    Class Component extends React.Component {
+    Constructor(props){
+    Super(props)
+    This.state = {}
+    }}
